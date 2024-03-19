@@ -11,3 +11,5 @@ slik at Yr kan lese av dette. Det trengs en API username som jeg har skjult på 
 så jeg implementerte det heller med Yr sin API, som også er gratis så lenge du ikke overloader serveren deres enormt.
 
 🔹Lærte en del om python, implementering av API, sikring av API-keys og brukernavn, og mye mer!
+
+- Vurderer å lage mer ut av det, med animasjoner for ulike værmeldinger, maskot, evt. nordlys-varsel.
