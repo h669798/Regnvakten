@@ -12,4 +12,4 @@ så jeg implementerte det heller med Yr sin API, som også er gratis så lenge d
 
 🔹Lærte en del om python, implementering av API, sikring av API-keys og brukernavn, og mye mer!
 
-- Vurderer å lage mer ut av det, med animasjoner for ulike værmeldinger, maskot, evt. nordlys-varsel.
+🔹 Vurderer å lage mer ut av det, med animasjoner for ulike værmeldinger, maskot, evt. nordlys-varsel.
