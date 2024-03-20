@@ -1,0 +1,27 @@
+
+.title {
+font-size: 50px;
+font-family: Impact;
+font-weight: lighter;
+color: #FFFFFF;
+letter-spacing: 12px;
+}
+
+body {
+  background-color: #126180;
+  font-family: Helvetica;
+  font-weight: bold;
+  color: #FFFFFF;
+}
+
+.body-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  text-align: center;
+}
+
+form, .weather-info {
+  margin: 15px;
+}

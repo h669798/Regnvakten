@@ -1,0 +1,38 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="no">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regnvakten</title>
+    <link rel="stylesheet" href="{% static 'RegnvaktenApp/css/style.css' %}">
+</head>
+
+<body>
+
+<div class = "body-wrapper">
+    <div>
+<h1 class = "title">REGNVAKTEN</h1>
+
+<form action="{% url 'weather' %}" method="post">
+    {% csrf_token %}
+    <label for="city_name">Skriv inn bynavn:</label>
+    <input type="text" id="city_name" name="city_name">
+    <input type="submit" value="Hent">
+</form>
+
+<div class = "weather-info">
+{% if weather %}
+    <p>Temperatur: {{ weather.temperature }}°C</p>
+    <p>Vær: {{ weather.description }}</p>
+{% elif error %}
+    <p>{{ error }}</p>
+{% endif %}
+    </div>
+</div>
+</div>
+
+</body>
+
+</html>

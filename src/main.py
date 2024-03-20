@@ -1,6 +1,6 @@
 import os
 from src.geonames_weather import GeoNames
-from src.time_and_date import extract_current_weather
+from src.reformat_weather_time import extract_current_weather
 from src.weather_api import YrWeatherAPI
 
 def main():
