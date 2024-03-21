@@ -11,27 +11,27 @@
 
 <body>
 
-<div class = "body-wrapper">
-    <div>
-<h1 class = "title">REGNVAKTEN</h1>
+    <div class="body-wrapper">
+        <h1 class="title">REGNVAKTEN</h1>
 
-<form action="{% url 'weather' %}" method="post">
-    {% csrf_token %}
-    <label for="city_name">Skriv inn bynavn:</label>
-    <input type="text" id="city_name" name="city_name">
-    <input type="submit" value="Hent">
-</form>
+        <div class="form-container">
+            <form action="{% url 'weather' %}" method="post">
+                {% csrf_token %}
+                <label for="city_name">Skriv inn bynavn:</label>
+                <input type="text" id="city_name" name="city_name">
+                <input type="submit" value="Hent">
+            </form>
 
-<div class = "weather-info">
-{% if weather %}
-    <p>Temperatur: {{ weather.temperature }}°C</p>
-    <p>Vær: {{ weather.description }}</p>
-{% elif error %}
-    <p>{{ error }}</p>
-{% endif %}
+            <div class="weather-info">
+            {% if weather %}
+                <p>Temperatur: {{ weather.temperature }}°C</p>
+                <p>Vær: {{ weather.description }}</p>
+            {% elif error %}
+                <p>{{ error }}</p>
+            {% endif %}
+            </div>
+        </div>
     </div>
-</div>
-</div>
 
 </body>
 

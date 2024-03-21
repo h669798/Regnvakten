@@ -1,10 +1,10 @@
-
 .title {
-font-size: 50px;
-font-family: Impact;
-font-weight: lighter;
-color: #FFFFFF;
-letter-spacing: 12px;
+  font-size: 50px;
+  font-family: Impact;
+  font-weight: lighter;
+  color: #FFFFFF;
+  letter-spacing: 12px;
+  text-align: center;
 }
 
 body {
@@ -12,16 +12,49 @@ body {
   font-family: Helvetica;
   font-weight: bold;
   color: #FFFFFF;
-}
-
-.body-wrapper {
+  margin: 0;
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100%;
-  text-align: center;
 }
 
-form, .weather-info {
+.body-wrapper {
+  text-align: center;
+  width: 100%;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   margin: 15px;
+}
+
+.weather-info {
+  margin-top: 0;
+}
+
+input[type="submit"] {
+margin-top: 10px;
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: Helvetica;
+}
+
+input[type="submit"]:hover {
+  background-color: #45a049;
 }
